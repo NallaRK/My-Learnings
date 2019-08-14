@@ -1,5 +1,8 @@
 ## Scope
 
+Scope means, how long the variable lives in memory.
+
+
 - Lexical scoping (var): if a variable defined using `var`, their lifetime exist within that `function{  }` body.
 - Block scoping(const, let): Until the next } is reached.
 
