@@ -6,4 +6,4 @@ Generally browsers takes significant time to implement new EcmaScript specs, so 
 
 So transpilers like Babel, TypeScript, CoffeScript will transpile/pollyfill code to ES5 version or as configured, so that applicaiton can run in old version of browsers.
 
-
+It is better to use new language features and using Babel/TypeScript to transpile it into ES5 version.
