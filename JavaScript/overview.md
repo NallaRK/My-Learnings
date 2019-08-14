@@ -38,6 +38,8 @@ string
 NOTE: Object keys should be in string format, we can't use numbers.  If used, they are type casted to string.  `obj[1]` is valid, as this implict coerce into string.
 `obj.1` invalid, as implicit coerce fails, and this is treated as number.
 
+Arrays, functions in JavaScript are type of Objects.
+
 #### Object Mutations
 If an object say, `obj1` assigned to another variable say `obj2` as below
 `const obj2=obj1`
