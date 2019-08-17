@@ -3,7 +3,7 @@
 
 ## IIFE
 
-Immeidately Invoked Function Expression, this creates closure and doesn't add or modify global object.
+Immeidately Invoked Function Expression, this creates closure and doesn't add or modify global object.  It has it'w own lexical environment.
 
 ```
 (function(){
