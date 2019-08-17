@@ -15,3 +15,5 @@ Immeidately Invoked Function Expression, this creates closure and doesn't add or
 
 **Benefits**
 
+- To create privately accessibile variable. These variable can't be accesssed by global scope.
+
