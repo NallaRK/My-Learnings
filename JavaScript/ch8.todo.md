@@ -12,7 +12,7 @@
 
 
 
-##this Context
+## this Context
 - Function ptofotype mehtods
   - bind, call and apply
 - Arrow functions
