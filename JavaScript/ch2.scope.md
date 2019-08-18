@@ -49,7 +49,7 @@ for(let i=0;i<5;i++){
 }
 
 arr[0]()  //0  
-
+```
 Block level scope created for `let i`, so each created function refers to it own `i` variable, hence `i` value for first function 0, 2nd function 1 and so on. 
 
 IIFE
@@ -60,7 +60,6 @@ for(let i=0;i<5;i++){
             return function() { console.log(x) }
          })(i))
 }
-
 arr[0]()  //0  
 ```
 Each function in for loop creates a closure with `i` value passed to it. So here each loop creating a new clousre environment which hold passed `i` value.
