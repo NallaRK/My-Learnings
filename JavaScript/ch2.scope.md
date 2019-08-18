@@ -28,23 +28,37 @@ These are global variables, it will pollute global scope and has lifetime untile
 
 From ES 2015 onwards its recommended to use let, const type variables.
 
-#### let vs var
+#### let vs var vs IIFE
 
+let
 ```
 const arr=[]
 for(var i=0;i<5;i++){
   arr[i]=function () { console.log(i)}
 }
 
-arr[0]()  //5 so here lexical enviroment using var is global for all created functions, so all functions that created refers to same `i`, which is updated to 5.
+arr[0]()  //5 here var i scope is available outside of function and, so by the time loop ends its value is '5', so when an indexed function called, `i` inside that function block refers to outside `var i`, which already updated to '5'.
 ```
-
+var
 ```
 const arr=[]
 for(let i=0;i<5;i++){
   arr[i]=function () { console.log(i)}
 }
 
-arr[0]()  //0  lexical enviroment using i is block level, so each created function refers to it own `i` variable, hence `i` value for first function 0, 2nd function 1 and so on. 
+arr[0]()  //0  block level scope created for `let i`, so each created function refers to it own `i` variable, hence `i` value for first function 0, 2nd function 1 and so on. 
+```
+
+IIFE
+
+```
+const arr=[]
+for(let i=0;i<5;i++){
+  arr[i]=(function (x) {
+            return function() { console.log(x) }
+         })(i))
+}
+
+arr[0]()  //0  each function in for loop creates a closure with `i` value passed to it. So here each loop creating a new clousre environment which hold passed `i` value.
 ```
 
