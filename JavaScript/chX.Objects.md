@@ -1,6 +1,14 @@
 # Objects in JavaScript
 
 An Object is dynamic collection of properties and every property has a key (type string) that is unique within that object.
+Everything in JavaScript is Object type
+- Number
+- Boolean
+- String
+- Array
+- Date
+- RegExp
+- Function
 
 Object literal representaion is preferred way to create objects in JavaScript, JS also provides constructor.
 ### Object literal:
