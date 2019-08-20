@@ -1,7 +1,8 @@
 # Objects in JavaScript
 
 An Object is dynamic collection of properties and every property has a key (type string) that is unique within that object.
-Everything in JavaScript is Object type
+
+Everything in JavaScript is Object type, all below data types are derived from Object.
 - Number
 - Boolean
 - String
