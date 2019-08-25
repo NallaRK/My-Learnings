@@ -1,9 +1,18 @@
-JavaScript is an interpreted language, reads line by line and executes.
-Each browser will have their JavaScript engines.
+JavaScript is an interpreted language, JS engine reads code line by line and executes.
+Each browser will have their own JavaScript engines, hence JS execution differs browser to browser, which leads to cross browser issues.
 
 These browser implements standards defined by ECMAScript. 
 
 ### var, const, let
+var, let and const are used to declare variables.
+
+|                 | var                                                                                                                                                           | let                                                                                    | const                                                                                  |
+|-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
+| scope           | function scope                                                                                                                                                | block{ } scope                                                                         | block { } scope                                                                        |
+| hoisting        | declaration hoisted with a variable value as undefined.                                                                                                       | not hoisted, referenceError  if `let` variable accessed before  declaration statement. | not hoisted, referenceError  if `let` variable accessed before  declaration statement. |
+| redeclaration   | Allowed.  `var` can be redeclared multiple  times, even in the same function scope.   When accessed it refers to its  function scope recent declaration value | SyntaxError redeclaration not allowed in same block scope                              | SyntaxErrorredeclaration not allowed in same block scope                               |
+| re assign value | Allowed                                                                                                                                                       | Allowed                                                                                | TypeError - `const` type variable can't be reassigned                                  |
+
 
 ### Types
 * **Dynamic typing**  
